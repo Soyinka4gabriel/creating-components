@@ -3,13 +3,14 @@ import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Main from './components/Main'
 
-function App(props) {
+function App() {
   return (
-    <div>
-      <h1>{props.title}</h1>
+    <div className='App'>
       <Header name="Anna" color="Purple"/>
-      <Main greet="Howdy"/>
-      <Sidebar greet="Hi"/>
+      <div>
+        <Main greet="Howdy"/>
+        <Sidebar greet="Hi"/>
+      </div>
     </div>
   );
 }
